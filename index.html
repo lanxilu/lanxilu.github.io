@@ -2,43 +2,147 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>阿泽工具箱 - 办公自动化资源站</title>
+<meta name="description" content="办公自动化、效率工具、实用干货。Excel技巧、简历优化、PPT排版、设计素材、自动化脚本，让工作更简单。">
 <style>
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;margin:0;padding:0;background:#f8f9fa;color:#333}
-.hero{background:linear-gradient(135deg,#ff5a5f,#ff8a5c);color:#fff;padding:80px 20px;text-align:center}
-.hero h1{font-size:2.5em;margin:0 0 10px}
-.hero p{font-size:1.2em;opacity:.95;max-width:600px;margin:0 auto}
-.container{max-width:900px;margin:0 auto;padding:40px 20px}
-.card{background:#fff;border-radius:12px;padding:24px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-.card h2{margin-top:0;color:#ff5a5f}
-.btn{display:inline-block;background:#ff5a5f;color:#fff;padding:12px 28px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:10px}
-.footer{text-align:center;padding:30px;color:#888;font-size:.9em}
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Microsoft YaHei",-apple-system,sans-serif; background:#0f1220; color:#e8eaf2; line-height:1.7; }
+  .container { max-width:1000px; margin:0 auto; padding:0 24px; }
+  header { padding:80px 0 40px; text-align:center; }
+  .badge { display:inline-block; background:#2a3050; color:#9aa3ff; border-radius:20px; padding:4px 16px; font-size:14px; margin-bottom:20px; }
+  h1 { font-size:44px; font-weight:700; margin-bottom:12px; letter-spacing:1px; }
+  .sub { color:#9aa3c0; font-size:18px; margin-bottom:32px; }
+  .hero-cta { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:12px 28px; border-radius:8px; text-decoration:none; font-size:16px; font-weight:600; transition:all .2s; }
+  .btn-primary { background:#ff4d6a; color:#fff; }
+  .btn-primary:hover { background:#ff6b85; transform:translateY(-2px); }
+  .btn-ghost { background:transparent; color:#9aa3ff; border:1px solid #3a4170; }
+  .btn-ghost:hover { border-color:#9aa3ff; }
+  section { padding:48px 0; }
+  h2 { font-size:28px; margin-bottom:8px; }
+  .sec-sub { color:#9aa3c0; margin-bottom:32px; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+  .card { background:#1a1f35; border:1px solid #2a3050; border-radius:12px; padding:28px; transition:transform .2s; }
+  .card:hover { transform:translateY(-4px); border-color:#3a4170; }
+  .card .tag { font-size:13px; color:#9aa3ff; background:#232a4a; padding:2px 10px; border-radius:12px; }
+  .card h3 { font-size:20px; margin:14px 0 8px; }
+  .card p { color:#b6bcd4; font-size:15px; }
+  .articles { display:flex; flex-direction:column; gap:16px; }
+  .article { background:#1a1f35; border:1px solid #2a3050; border-radius:12px; padding:24px 28px; transition:border-color .2s; }
+  .article:hover { border-color:#3a4170; }
+  .article h3 { font-size:19px; color:#fff; margin-bottom:6px; }
+  .article .meta { font-size:13px; color:#7a82a0; margin-bottom:10px; }
+  .article ul { padding-left:20px; color:#b6bcd4; font-size:15px; }
+  .article li { margin-bottom:4px; }
+  footer { border-top:1px solid #2a3050; padding:40px 0; text-align:center; color:#7a82a0; font-size:14px; }
+  .highlight { color:#ff4d6a; font-weight:600; }
 </style>
 </head>
 <body>
-<div class="hero">
-<h1>阿泽工具箱</h1>
-<p>办公自动化 · 效率工具 · 实用干货，让工作更简单</p>
-</div>
-<div class="container">
-<div class="card">
-<h2>📦 三合一自动化办公工具箱</h2>
-<p>批量处理文档、表格自动化、一键生成——解放你的双手，把时间花在更重要的事上。</p>
-<a class="btn" href="https://www.xiaohongshu.com" target="_blank">了解更多 →</a>
-</div>
-<div class="card">
-<h2>✨ 最新干货</h2>
-<p>持续更新办公效率技巧、自动化教程、实用工具推荐。关注小红书账号获取最新内容！</p>
-<a class="btn" href="https://www.xiaohongshu.com" target="_blank">关注小红书 →</a>
-</div>
-<div class="card">
-<h2>📮 联系我</h2>
-<p>有任何需求或建议，欢迎通过小红书私信交流。</p>
-</div>
-</div>
-<div class="footer">
-<p>© 2026 阿泽工具箱 · 用心做好每一件小事</p>
-</div>
+<header>
+  <div class="container">
+    <span class="badge">阿泽工具箱 · 设计 × 效率 × 副业</span>
+    <h1>阿泽工具箱</h1>
+    <p class="sub">效率工具 × 设计干货 × 实用模板</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#articles">最新干货</a>
+      <a class="btn btn-ghost" href="https://www.xiaohongshu.com" target="_blank">关注小红书 →</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h2>三合一自动化办公工具箱</h2>
+    <p class="sec-sub">一个工具解决三类痛点，专为打工人打造</p>
+    <div class="cards">
+      <div class="card">
+        <span class="tag">文档处理</span>
+        <h3>批量处理文档</h3>
+        <p>Word/Excel/PDF 批量转换、合并、重命名，一键搞定重复劳动。</p>
+      </div>
+      <div class="card">
+        <span class="tag">流程自动化</span>
+        <h3>重复操作自动化</h3>
+        <p>表格汇总、文件归类、定时任务，把时间花在更重要的事上。</p>
+      </div>
+      <div class="card">
+        <span class="tag">报价模板</span>
+        <h3>设计接单模板</h3>
+        <p>报价单、合同、交付清单模板，接单更专业、收款更放心。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="articles" style="background:#131731;">
+  <div class="container">
+    <h2>最新干货</h2>
+    <p class="sec-sub">小红书同步内容，持续更新</p>
+    <div class="articles">
+
+      <div class="article">
+        <h3>💪 10个Excel技巧让你早点下班</h3>
+        <div class="meta">办公效率 · 2026-08-15</div>
+        <ul>
+          <li><b>Ctrl+E</b> 智能填充：拆分合并数据，一秒搞定</li>
+          <li><b>Ctrl+T</b> 超级表：自动扩展格式，下拉筛选</li>
+          <li><b>VLOOKUP</b> 数据查找：跨表匹配不用愁</li>
+          <li><b>SUMIF/COUNTIF</b> 条件求和：TEXT 格式随心转</li>
+          <li>冻结窗格、快速求和、筛选、分列、去重，效率翻倍</li>
+        </ul>
+      </div>
+
+      <div class="article">
+        <h3>📄 简历这样写HR秒回你</h3>
+        <div class="meta">求职干货 · 2026-08-15</div>
+        <ul>
+          <li><b>黄金排版</b>：一页纸搞定，信息优先级清晰</li>
+          <li><b>量化成果</b>：用数字说话，如"效率提升40%"</li>
+          <li><b>关键词</b>：岗位JD用词、技能、证书、项目经历</li>
+          <li>别用花哨模板，简历就是简历，简洁为王</li>
+        </ul>
+      </div>
+
+      <div class="article">
+        <h3>🎨 面试作品集这样做就稳了</h3>
+        <div class="meta">设计求职 · 2026-08-15</div>
+        <ul>
+          <li><b>项目筛选</b>：只放3-5个代表项目，质量大于数量</li>
+          <li><b>讲稿准备</b>：每个项目讲背景→思路→方案→复盘</li>
+          <li><b>视觉包装</b>：统一风格，首屏抓人，过程展示</li>
+        </ul>
+      </div>
+
+      <div class="article">
+        <h3>💰 设计师接单报价避坑指南</h3>
+        <div class="meta">接单变现 · 2026-08-15</div>
+        <ul>
+          <li><b>报价前必看</b>：确认用途、工期、修改次数，报价最高可提50%</li>
+          <li><b>避坑话术</b>："这很简单顺手做"→报价你说了算</li>
+          <li><b>报价公式</b>：时薪×耗时 + 风险系数 + 加急费</li>
+        </ul>
+      </div>
+
+      <div class="article">
+        <h3>⚡ 打工人效率神器 | 三合一办公工具箱</h3>
+        <div class="meta">办公效率 · 2026-08-15</div>
+        <ul>
+          <li>批量处理文档、表格自动化、一键生成——解放你的双手</li>
+          <li>一个工具解决三类痛点，专为打工人打造</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 阿泽工具箱 · 用心做好每一件小事</p>
+    <p style="margin-top:8px;">小红书：阿泽（专业商业设计）| GitHub：lanxilu</p>
+  </div>
+</footer>
 </body>
 </html>
